@@ -178,7 +178,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_D16ds_v4"
+                    "vmSize": "Standard_D16ls_v5"
                 },
                 "storageProfile": {
                     "osDisk": {

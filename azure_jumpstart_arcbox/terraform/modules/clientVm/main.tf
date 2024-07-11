@@ -245,7 +245,7 @@ resource "azurerm_virtual_machine" "client" {
   location              = data.azurerm_resource_group.rg.location
   resource_group_name   = data.azurerm_resource_group.rg.name
   network_interface_ids = [ azurerm_network_interface.nic.id ]
-    vm_size             = var.deployment_flavor == "DevOps" ? "Standard_b4s_v2" : var.deployment_flavor == "DataOps" ? "Standard_D8s_v4" : "Standard_D16ds_v4"
+    vm_size             = var.deployment_flavor == "DevOps" ? "Standard_b4s_v2" : var.deployment_flavor == "DataOps" ? "Standard_D8s_v4" : "Standard_D16ls_v5"
 
 
   storage_image_reference {

@@ -140,7 +140,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
   tags: resourceTags
   properties: {
     hardwareProfile: {
-      vmSize: flavor == 'DevOps' ? 'Standard_b4s_v2' : flavor == 'DataOps' ? 'Standard_D8s_v4' : 'Standard_D16ds_v4'
+      vmSize: flavor == 'DevOps' ? 'Standard_b4s_v2' : flavor == 'DataOps' ? 'Standard_D8s_v4' : 'Standard_D16ls_v5'
     }
     storageProfile: {
       osDisk: {
